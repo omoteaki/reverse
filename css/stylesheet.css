@@ -61,6 +61,6 @@ div.box {
   background: white;
 }
 
-.hide {
-  /* background: pink; */
+.hide:hover {
+  background: rgba(255, 192, 203, 0.434);
 }
