@@ -183,8 +183,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < y && y >= 1) {
-        i++;
         if (discs[index - i * 8].className == "hide") {
           console.log("上にはないのでloopからでます");
           console.log("今回の判断では置けません");
@@ -199,6 +199,7 @@
           }
         } else if  (discs[index - i * 8].className == nextColor) {
           console.log("違う色なのでloopを続けます");
+          console.log(i);
         } else {
           console.log( "エラーが起きています");
           break;
@@ -217,8 +218,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < y && y >= 1) {
-        i++;
         if (discs[index - i * 8].className == "hide") {
           return false;
         } else if (discs[index - i * 8].className == turnColor) {
@@ -316,8 +317,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < y && y >= 1 && x + 1 < 7) {
-        i++;
         if (discs[index - i * 8 + i].className == "hide") {
           console.log("右上にはないのでloopからでます");
           console.log("今回の判断では置けません");
@@ -352,8 +353,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < y && y >= 1 && x + 1 < 7) {
-        i++;
         if (discs[index - i * 8 + i].className == "hide") {
           console.log("右上にはないのでloopからでます");
           console.log("今回の判断では置けません");
@@ -470,8 +471,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < x && x > 0 && i < y && y >= 1) {
-        i++;
         if (discs[index - i * 8 - i].className == "hide") {
           console.log("左上にはないのでloopからでます");
           console.log("今回の判断では置けません");
@@ -509,8 +510,8 @@
     let y = index / 8; //0~0.875とかになる
     let i = 0;
     while (i < 7) {
+      i++;
       if (i < x && x > 0 && i < y && y >= 1) {
-        i++;
         if (discs[index - i * 8 - i].className == "hide") {
           return false;
         } else if (discs[index - i * 8 - i].className == turnColor) {
