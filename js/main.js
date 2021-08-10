@@ -4,6 +4,7 @@
   const discs = document.querySelectorAll("div.box div");
   const message = document.querySelector("p#message");
   const turn = document.querySelector("p#turn");
+  const skip = document.getElementById("skip");
 
   let turnColor = "black";
   let nextColor = "white";
@@ -37,6 +38,11 @@
     });
   });
 
+  skip.addEventListener('click', function(){
+    [turnColor, nextColor] = [nextColor, turnColor];
+    turn.innerText = `${turnColor} の番です`;
+    message.innerText = "";
+  });
 
   function reverse(index) {
     reverseLeft(index);
