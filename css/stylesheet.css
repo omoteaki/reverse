@@ -64,3 +64,16 @@ div.box {
 .hide:hover {
   background: rgba(255, 192, 203, 0.434);
 }
+
+#skip {
+  margin-top: 30px;
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#skip:hover {
+  background-color: #bbb;
+}
